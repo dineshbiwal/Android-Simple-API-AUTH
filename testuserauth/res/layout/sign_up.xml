@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#74d1dc" >
+
+                <EditText
+                    android:id="@+id/user1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="33dp"
+                    android:background="@drawable/item_border"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:hint="@string/ids"
+                    android:inputType="text"
+                    android:nextFocusDown="@+id/password"
+                    android:padding="10dp" >
+
+                    <requestFocus />
+                </EditText>
+
+                <EditText
+                    android:id="@+id/pass1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/user1"
+                    android:layout_alignRight="@+id/user1"
+                    android:layout_below="@+id/user1"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/item_border"
+                    android:ems="10"
+                    android:hint="***"
+                    android:inputType="textPassword"
+                    android:nextFocusDown="@+id/forgot_pass"
+                    android:padding="10dp" />
+
+                <Button
+                    android:id="@+id/sign_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/pass1"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/signup" />
+
+            </RelativeLayout>
+
+</LinearLayout>

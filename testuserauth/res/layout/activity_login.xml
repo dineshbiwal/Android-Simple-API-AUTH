@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#74d1dc"
+        android:gravity="center" >
+
+        <FrameLayout
+            android:id="@+id/img_f1"
+            android:layout_width="wrap_content"
+            android:layout_height="270dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="62dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#74d1dc" >
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="33dp"
+                    android:background="@drawable/item_border"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:hint="@string/ids"
+                    android:inputType="text"
+                    android:nextFocusDown="@+id/password"
+                    android:padding="10dp" >
+
+                    <requestFocus />
+                </EditText>
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/username"
+                    android:layout_alignRight="@+id/username"
+                    android:layout_below="@+id/username"
+                    android:layout_marginTop="20dp"
+                   
+                    android:ems="10"
+                    android:hint="***"
+                    android:inputType="textPassword"
+                    android:nextFocusDown="@+id/forgot_pass"
+                    android:padding="10dp"
+                    android:background="@drawable/item_border" />
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/signup"
+                    android:layout_alignBottom="@+id/signup"
+                    android:layout_alignLeft="@+id/password"
+                    android:text="@string/signin" />
+
+                <Button
+                    android:id="@+id/signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/password"
+                    android:layout_marginBottom="35dp"
+                    android:text="@string/signup" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/img_f1"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/img_f1"
+            android:layout_marginTop="22dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#74d1dc" >
+
+                <TextView
+                    android:id="@+id/email_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/welcome"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
